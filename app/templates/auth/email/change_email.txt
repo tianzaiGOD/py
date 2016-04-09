@@ -1,0 +1,11 @@
+Dear {{ user.username }}
+
+To confirm your new email,you can paste the following link in your browser'address bar;
+
+{{ url_for('auth.change_email', token=token, _external=True) }}
+
+Sincerely,
+
+The Flaky Team
+
+Not:replies to this email address are not monitored.
